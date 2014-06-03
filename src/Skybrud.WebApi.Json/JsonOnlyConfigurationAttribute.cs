@@ -7,12 +7,12 @@ namespace Skybrud.WebApi.Json {
     
     public class JsonOnlyConfigurationAttribute : Attribute, IControllerConfiguration {
         
-        public virtual void Initialize(HttpControllerSettings controllerSettings, HttpControllerDescriptor controllerDescriptor) {
-            var toRemove = controllerSettings.Formatters.Where(t => (t is System.Net.Http.Formatting.JsonMediaTypeFormatter) || (t is XmlMediaTypeFormatter)).ToList();
+        public virtual void Initialize(HttpControllerSettings settings, HttpControllerDescriptor descriptor) {
+            var toRemove = settings.Formatters.Where(t => t is JsonMediaTypeFormatter || t is XmlMediaTypeFormatter).ToList();
             foreach (var r in toRemove) {
-                controllerSettings.Formatters.Remove(r);
+                settings.Formatters.Remove(r);
             }
-            controllerSettings.Formatters.Add(new JsonMediaTypeFormatter());
+            settings.Formatters.Add(new SkybrudJsonMediaTypeFormatter());
         }
     
     }

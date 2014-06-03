@@ -11,7 +11,7 @@
     <iconUrl>http://www.skybrud.dk/img/5431sk/icon/favicon.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Skybrud.WebApi.Json lets you add an attribute to your WebApi controllers forcing the server to always output the response as JSON.</description>
-    <tags>WebApi, JSON</tags>
+    <tags>WebApi, JSON, Umbraco, Skybrud</tags>
   </metadata>
   <files>
     <file src="..\src\Skybrud.WebApi.Json\bin\Release\Skybrud.WebApi.Json.dll" target="lib" />

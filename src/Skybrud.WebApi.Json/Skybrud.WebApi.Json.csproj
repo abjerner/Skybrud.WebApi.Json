@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net.Http" />
@@ -44,8 +47,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="JsonOnlyConfigurationAttribute.cs" />
+    <Compile Include="Meta\HttpRequestMessageExtensionMethods.cs" />
+    <Compile Include="Meta\IJsonPagination.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Meta\JsonMetaData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Meta\JsonMetaResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Meta\JsonPagination.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SkybrudJsonMediaTypeFormatter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -12,6 +12,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Skybrud.WebApi.Json lets you add an attribute to your WebApi controllers forcing the server to always output the response as JSON.</description>
     <tags>WebApi, JSON, Umbraco, Skybrud</tags>
+    <dependencies> 
+       <dependency id="Newtonsoft.Json" version="6.0.4" />
+    </dependencies>
   </metadata>
   <files>
     <file src="..\src\Skybrud.WebApi.Json\bin\Release\Skybrud.WebApi.Json.dll" target="lib" />

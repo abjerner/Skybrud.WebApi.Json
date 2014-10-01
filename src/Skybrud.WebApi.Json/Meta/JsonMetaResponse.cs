@@ -73,7 +73,7 @@ namespace Skybrud.WebApi.Json.Meta {
         /// <param name="code">The status code.</param>
         /// <param name="error">The error message of the response.</param>
         public static JsonMetaResponse GetError(HttpStatusCode code, string error) {
-            return GetError(HttpStatusCode.InternalServerError, error, null);
+            return GetError(code, error, null);
         }
 
         /// <summary>

@@ -2,6 +2,12 @@
 
 Since this project is made for use in Umbraco, I have only tested in Umbraco, and currently only in Umbraco 7.0.4. However since there isn't anything Umbraco specific code, it should also work with standard WebApi controllers as well as other versions of Umbraco.
 
+#### Download
+
+Skybrud.WebApi.Json can be downloaded from NuGet:
+
+http://www.nuget.org/packages/Skybrud.WebApi.Json/
+
 #### How to use in Umbraco ####
 
 ```C#

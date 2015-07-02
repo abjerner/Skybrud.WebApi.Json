@@ -3,8 +3,8 @@
   <metadata>
     <id>Skybrud.WebApi.Json</id>
     <title>Skybrud.WebApi.Json</title>
-    <version>1.0.2</version>
-    <authors>Anders Bjerner</authors>
+    <version>1.0.3</version>
+    <authors>Anders Bjerner, René Pjengaard</authors>
     <owners>Anders Bjerner</owners>
     <licenseUrl>https://github.com/abjerner/Skybrud.WebApi.Json/blob/master/LICENSE.md</licenseUrl>
     <projectUrl>https://github.com/abjerner/Skybrud.WebApi.Json/</projectUrl>

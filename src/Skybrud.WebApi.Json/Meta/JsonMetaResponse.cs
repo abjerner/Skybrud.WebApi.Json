@@ -99,8 +99,25 @@ namespace Skybrud.WebApi.Json.Meta {
         /// <param name="func">The delegate that should be used for converting the collection items.</param>
         /// <param name="offset">The offset to be used for pagination.</param>
         /// <param name="limit">The limit to be used for pagination.</param>
+        public static JsonMetaResponse GetSuccessFromIEnumerable<TIn, TOut>(IEnumerable<TIn> collection, Func<TIn, TOut> func, int offset = 0, int limit = 10){
+
+            return GetSuccessFromIEnumerable(collection, func, offset, limit, 0);
+
+        }
+
+        /// <summary>
+        /// Generates a new success response based on the specified collection.
+        /// Pagination will be enforced using <code>offset</code> and
+        /// <code>limit</code>, and the remaining items will be converted using
+        /// the specified delegate <code>func</code>.
+        /// </summary>
+        /// <param name="collection">The collection.</param>
+        /// <param name="func">The delegate that should be used for converting the collection items.</param>
+        /// <param name="offset">The offset to be used for pagination.</param>
+        /// <param name="limit">The limit to be used for pagination.</param>
         /// <param name="totalres">If you have another total than the total of the collection</param>
-        public static JsonMetaResponse GetSuccessFromIEnumerable<TIn, TOut>(IEnumerable<TIn> collection, Func<TIn, TOut> func, int offset = 0, int limit = 10, int totalres = 0) {
+        public static JsonMetaResponse GetSuccessFromIEnumerable<TIn, TOut>(IEnumerable<TIn> collection, Func<TIn, TOut> func, int offset = 0, int limit = 10, int totalres = 0)
+        {
 
             // Validate input
             if (collection == null) throw new ArgumentNullException("collection");

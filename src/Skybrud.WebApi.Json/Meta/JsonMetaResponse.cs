@@ -99,14 +99,15 @@ namespace Skybrud.WebApi.Json.Meta {
         /// <param name="func">The delegate that should be used for converting the collection items.</param>
         /// <param name="offset">The offset to be used for pagination.</param>
         /// <param name="limit">The limit to be used for pagination.</param>
-        public static JsonMetaResponse GetSuccessFromIEnumerable<TIn, TOut>(IEnumerable<TIn> collection, Func<TIn, TOut> func, int offset = 0, int limit = 10) {
+        /// <param name="totalres">If you have another total than the total of the collection</param>
+        public static JsonMetaResponse GetSuccessFromIEnumerable<TIn, TOut>(IEnumerable<TIn> collection, Func<TIn, TOut> func, int offset = 0, int limit = 10, int totalres = 0) {
 
             // Validate input
             if (collection == null) throw new ArgumentNullException("collection");
             if (func == null) throw new ArgumentNullException("func");
 
-            // Get the total amount of items in the collection
-            int total = collection.Count();
+            // Get the total amount of items in the collection or from param totalRes
+            int total = totalres > 0 ? totalres : collection.Count();
 
             // Enforce pagination and then convert remaining objects
             IEnumerable<TOut> data = collection.Skip(offset).Take(limit).Select(func);

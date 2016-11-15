@@ -5,9 +5,8 @@ namespace Skybrud.WebApi.Json.Meta {
     public static class HttpRequestMessageExtensionMethods {
 
         /// <summary>
-        /// Creates a new <code>HttpResponseMessage</code> based on the specified
-        /// <code>JsonMetaResponse</code>. The status code of the server response will
-        /// automatically be derived from the <code>JsonMetaResponse</code>.
+        /// Creates a new <see cref="HttpResponseMessage"/> based on the specified <see cref="JsonMetaResponse"/>. The
+        /// status code of the server response will automatically be derived from the <see cref="JsonMetaResponse"/>.
         /// </summary>
         /// <param name="request">The current request.</param>
         /// <param name="response">The meta response object to be returned.</param>

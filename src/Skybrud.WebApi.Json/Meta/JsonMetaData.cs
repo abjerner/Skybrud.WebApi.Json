@@ -3,6 +3,9 @@ using Newtonsoft.Json;
 
 namespace Skybrud.WebApi.Json.Meta {
 
+    /// <summary>
+    /// Class representing the meta data of a JSON response.
+    /// </summary>
     public class JsonMetaData {
 
         /// <summary>

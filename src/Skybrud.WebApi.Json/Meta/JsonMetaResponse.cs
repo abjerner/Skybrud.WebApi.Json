@@ -12,7 +12,7 @@ namespace Skybrud.WebApi.Json.Meta {
         /// Gets or sets the meta data for the response.
         /// </summary>
         [JsonProperty(PropertyName = "meta")]
-        public JsonMetaData Meta { get; private set; }
+        public JsonMetaData Meta { get; set; }
 
         /// <summary>
         /// Gets or sets the pagination object.
@@ -24,9 +24,9 @@ namespace Skybrud.WebApi.Json.Meta {
         /// Gets or sets the data object.
         /// </summary>
         [JsonProperty(PropertyName = "data")]
-        public object Data { get; private set; }
+        public object Data { get; set; }
 
-        private JsonMetaResponse() {
+        public JsonMetaResponse() {
             Meta = new JsonMetaData();
         }
 

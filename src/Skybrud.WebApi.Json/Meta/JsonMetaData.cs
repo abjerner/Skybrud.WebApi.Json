@@ -19,10 +19,6 @@ namespace Skybrud.WebApi.Json.Meta {
         [JsonProperty(PropertyName = "error", NullValueHandling = NullValueHandling.Ignore)]
         public string Error { get; set; }
 
-        internal JsonMetaData() {
-            // Hide default constructor
-        }
-
     }
 
 }

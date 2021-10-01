@@ -4,7 +4,8 @@ using System.Net.Http.Formatting;
 using System.Web.Http.Controllers;
 
 namespace Skybrud.WebApi.Json {
-    
+
+    [AttributeUsage(AttributeTargets.Class)]
     public class JsonOnlyConfigurationAttribute : Attribute, IControllerConfiguration {
         
         public virtual void Initialize(HttpControllerSettings settings, HttpControllerDescriptor descriptor) {

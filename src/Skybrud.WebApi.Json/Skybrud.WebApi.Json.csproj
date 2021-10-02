@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Version>1.0.4</Version>
+    <Version>1.1.0</Version>
     <Authors>Anders Bjerner, René Pjengaard, Jesper Mayntzhusen</Authors>
     <Company>Limbo</Company>
     <Description>Skybrud.WebApi.Json lets you add an attribute to your WebApi controllers forcing the server to always output the response as JSON.</Description>

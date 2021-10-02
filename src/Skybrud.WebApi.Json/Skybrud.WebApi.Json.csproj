@@ -9,17 +9,17 @@
   <PropertyGroup>
     <Version>1.0.4</Version>
     <Authors>Anders Bjerner, René Pjengaard, Jesper Mayntzhusen</Authors>
-    <Company>Skybrud.dk</Company>
+    <Company>Limbo</Company>
     <Description>Skybrud.WebApi.Json lets you add an attribute to your WebApi controllers forcing the server to always output the response as JSON.</Description>
     <Copyright>Copyright © 2021</Copyright>
   </PropertyGroup>
 
   <PropertyGroup>
     <PackageId>Skybrud.WebApi.Json</PackageId>
-    <PackageTags>WebApi, JSON, Umbraco, Skybrud</PackageTags>
+    <PackageTags>WebApi, JSON, Umbraco, Skybrud, Limbo</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/abjerner/Skybrud.WebApi.Json</PackageProjectUrl>
-    <PackageIconUrl>http://www.skybrud.dk/img/5431sk/icon/favicon.ico</PackageIconUrl>
+    <PackageIcon>Limbo.png</PackageIcon>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/abjerner/Skybrud.WebApi.Json</RepositoryUrl>
   </PropertyGroup>
@@ -28,6 +28,10 @@
     <Reference Include="System.Web" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="4.0.20710" />
     <PackageReference Include="Newtonsoft.Json" Version="6.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="../build/Limbo.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>

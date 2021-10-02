@@ -26,7 +26,6 @@
 
   <ItemGroup>
     <Reference Include="System.Web" />
-    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="4.0.20710" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="4.0.20710" />
     <PackageReference Include="Newtonsoft.Json" Version="6.0.4" />
   </ItemGroup>
